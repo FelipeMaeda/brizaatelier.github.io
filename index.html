@@ -1,111 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Briza Atelier</title>
-
-    css/style.css
-
-    https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Briza Atelier — velas artesanais criadas para trazer leveza, aconchego e presença aos seus momentos.">
+  <meta name="theme-color" content="#74755d">
+  <meta property="og:title" content="Briza Atelier | Velas artesanais">
+  <meta property="og:description" content="Inspirada na delicadeza da brisa.">
+  <meta property="og:image" content="assets/images/hero-briza.png">
+  <meta property="og:type" content="website">
+  <title>Briza Atelier | Velas artesanais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-    <header>
-        <nav>
-            #inicioInício</a>
-            #sobreSobre</a>
-            #colecaoColeção</a>
-            #contatoContato</a>
-        </nav>
-    </header>
+  <header class="site-header" id="topo">
+    <div class="header-inner container">
+      <a class="brand" href="#inicio" aria-label="Briza Atelier — início">
+        <img class="brand-logo" src="assets/images/logo.png" alt="Briza Atelier" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <span class="brand-fallback" hidden>BRIZA <small>ATELIER</small></span>
+      </a>
 
-    <section id="inicio" class="hero">
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
 
-        <img src="o.png
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <a href="#sobre">Nossa essência</a>
+        <a href="#colecao">Coleção</a>
+        <a href="#presentes">Presentes</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-        <h1>Inspirada na delicadeza da brisa.</h1>
-
-        <p>
-            Velas artesanais criadas para transformar momentos em memórias.
-        </p>
-
-        <a class="btn" href="https9
-            Fale Conosco
-        </a>
-
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/images/hero-briza.png" alt="Vela artesanal em vidro, cercada por folhas e tecidos em tons naturais">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container reveal">
+        <p class="eyebrow">VELAS ARTESANAIS</p>
+        <h1 id="hero-title">O essencial<br>é sentir.</h1>
+        <p class="hero-copy">Aromas delicados para desacelerar, acolher e transformar pequenos instantes em memórias.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#colecao">Conheça a coleção</a>
+          <a class="button button-ghost" data-whatsapp href="https://wa.me/5521999999999" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#sobre" aria-label="Descer para a próxima seção">↓</a>
     </section>
 
-    <section id="sobre" class="sobre">
+    <section class="intro section" id="sobre">
+      <div class="container intro-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">NOSSA ESSÊNCIA</p>
+          <h2>Leveza que<br>acende a casa.</h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p class="lead">A Briza Atelier nasceu para tornar a rotina mais calma, perfumada e especial.</p>
+          <p>Cada vela é produzida artesanalmente, em pequenos lotes, com cuidado em cada detalhe — do aroma à embalagem. Uma presença delicada para pausas, encontros e presentes cheios de intenção.</p>
+          <ul class="values" aria-label="Diferenciais da Briza Atelier">
+            <li>Feito à mão</li>
+            <li>Pequenos lotes</li>
+            <li>Embalagem para presentear</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <div class="container">
-
-            <div>
-                <h2>Sobre a Briza Atelier</h2>
-
-                <p>
-                    A Briza Atelier nasceu da busca por leveza, acolhimento e bem-estar.
-                    Cada vela é produzida artesanalmente, com atenção aos detalhes,
-                    aromas selecionados e design sofisticado.
-                </p>
-            </div>
-
-            assets/botanico.png
-
+    <section class="collection section" id="colecao" aria-labelledby="collection-title">
+      <div class="container">
+        <div class="section-top reveal">
+          <div>
+            <p class="eyebrow">AROMAS PARA CADA MOMENTO</p>
+            <h2 id="collection-title">Coleção Briza</h2>
+          </div>
+          <p>Descubra fragrâncias pensadas para acompanhar diferentes atmosferas da sua casa.</p>
         </div>
 
-    </section>
-
-    <section id="colecao" class="colecao">
-
-        <h2>Coleção</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                assets/vela1.jpg
-                <h3>Lavanda</h3>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-image-wrap">
+              <img src="assets/images/vela-lavanda.png" alt="Vela artesanal de lavanda com ramos secos" loading="lazy">
+              <span class="product-tag">RELAXAR</span>
             </div>
-
-            <div class="card">
-                assets/vela2.jpg
-                <h3>Baunilha</h3>
+            <div class="product-info">
+              <div><h3>Lavanda</h3><p>Floral · suave · acolhedora</p></div>
+              <a data-whatsapp-product="Lavanda" href="#">Quero conhecer <span aria-hidden="true">→</span></a>
             </div>
+          </article>
 
-            <div class="card">
-                assets/vela3.jpg
-                <h3>Coleção Especial</h3>
+          <article class="product-card reveal">
+            <div class="product-image-wrap">
+              <img src="assets/images/vela-baunilha.png" alt="Vela artesanal de baunilha com favas e flores claras" loading="lazy">
+              <span class="product-tag">ACOLHER</span>
             </div>
+            <div class="product-info">
+              <div><h3>Baunilha</h3><p>Adocicada · cremosa · confortável</p></div>
+              <a data-whatsapp-product="Baunilha" href="#">Quero conhecer <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
 
+          <article class="product-card product-card-wide reveal" id="presentes">
+            <div class="product-image-wrap">
+              <img src="assets/images/kit-presente.png" alt="Kit para presente com vela, caixa e ramo botânico" loading="lazy">
+              <span class="product-tag">PRESENTEAR</span>
+            </div>
+            <div class="product-info">
+              <div><h3>Kit Briza</h3><p>Uma escolha delicada para transformar carinho em memória.</p></div>
+              <a data-whatsapp-product="Kit Briza para presente" href="#">Montar meu presente <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
         </div>
-
+      </div>
     </section>
 
-    <section class="instagram">
-
-        <h2>Acompanhe nosso Instagram</h2>
-
-        https://instagram.com/brizaatelier
-            @brizaatelier
-        </a>
-
+    <section class="manifesto section">
+      <div class="container manifesto-inner reveal">
+        <span class="botanical" aria-hidden="true">❧</span>
+        <blockquote>“Sua escolha transforma<br>momentos em memórias.”</blockquote>
+        <p>BRIZA ATELIER</p>
+      </div>
     </section>
 
-    <footer id="contato">
-
-        <p>Briza Atelier</p>
-        <p>Feito à mão com amor.</p>
-
-        <div class="social">
-            #Instagram</a>
-            #WhatsApp</a>
+    <section class="care section">
+      <div class="container care-grid">
+        <div class="care-title reveal">
+          <p class="eyebrow">CUIDADO EM CADA DETALHE</p>
+          <h2>Uma experiência que começa antes de acender.</h2>
         </div>
+        <div class="care-items">
+          <div class="care-item reveal"><span>01</span><h3>Escolha seu aroma</h3><p>Encontre a fragrância que combina com o momento que você quer criar.</p></div>
+          <div class="care-item reveal"><span>02</span><h3>Receba com carinho</h3><p>Embalamos cada peça com delicadeza, pronta para você ou para presentear.</p></div>
+          <div class="care-item reveal"><span>03</span><h3>Acenda e desacelere</h3><p>Apare o pavio, respire fundo e permita que o ambiente se transforme.</p></div>
+        </div>
+      </div>
+    </section>
 
-    </footer>
+    <section class="contact section" id="contato">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">FALE COM A BRIZA</p>
+        <h2>Qual aroma combina<br>com o seu momento?</h2>
+        <p>Conte o que você procura. A Briza Atelier ajuda a escolher a vela ou o presente ideal.</p>
+        <a class="button button-light" data-whatsapp href="https://wa.me/5521999999999" target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
+      </div>
+    </section>
+  </main>
 
-js/script.jsscript>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">BRIZA <small>ATELIER</small><p>Inspirada na delicadeza da brisa.</p></div>
+      <div><h3>Contato</h3><a href="mailto:contato@brizaatelier.com.br">contato@brizaatelier.com.br</a><a data-whatsapp href="https://wa.me/5521999999999">WhatsApp</a></div>
+      <div><h3>Redes sociais</h3><a href="https://instagram.com/brizaatelier" target="_blank" rel="noopener">Instagram</a><a href="#">Pinterest</a></div>
+      <div><h3>Atendimento</h3><p>Rio de Janeiro · RJ</p><p>Com hora marcada</p></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> Briza Atelier.</p><a href="#topo">Voltar ao topo ↑</a></div>
+  </footer>
 
+  <a class="floating-whatsapp" data-whatsapp href="https://wa.me/5521999999999" target="_blank" rel="noopener" aria-label="Falar com a Briza Atelier pelo WhatsApp">WA</a>
 </body>
 </html>
