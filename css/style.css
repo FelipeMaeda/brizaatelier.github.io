@@ -1,0 +1,156 @@
+:root{
+
+    --bege:#F5F1EC;
+    --bege-escuro:#DDD1C0;
+    --oliva:#7B7F61;
+    --oliva-dark:#62664E;
+    --texto:#3E342E;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:var(--bege);
+    color:var(--texto);
+    line-height:1.8;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:rgba(245,241,236,.95);
+    padding:20px;
+    z-index:999;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--texto);
+    letter-spacing:2px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    width:250px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:var(--oliva);
+    color:white;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:var(--oliva-dark);
+}
+
+.sobre{
+    padding:120px 10%;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.container img{
+    width:300px;
+}
+
+.colecao{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    padding:20px;
+}
+
+.instagram{
+    padding:120px 20px;
+    text-align:center;
+    background:var(--bege-escuro);
+}
+
+footer{
+    padding:60px;
+    text-align:center;
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    margin:0 10px;
+    text-decoration:none;
+    color:var(--oliva);
+}
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+}
